@@ -16,15 +16,16 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
 nav ul li a {
-    color: #007bff; /* Cor azul para os links na parte superior */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -32,6 +33,9 @@ nav ul li a {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card {
@@ -40,6 +44,7 @@ nav ul li a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
     overflow: hidden;
+    flex-basis: calc(33.33% - 20px);
 }
 
 .card img {
@@ -68,10 +73,11 @@ footer {
 footer ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer ul li {
-    display: inline;
     margin-right: 10px;
 }
 
